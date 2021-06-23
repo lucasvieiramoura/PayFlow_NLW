@@ -1,0 +1,4 @@
+#Tue Jun 22 14:25:07 BRT 2021
+base.0=C\:\\Users\\lucas.moura\\Documents\\GitHub\\NLW_2_2021_Dart\\payflow\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
