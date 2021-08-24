@@ -42,15 +42,10 @@ class BarcodeScannerController {
       if (status.hasBarcode == false)
         status = BarcodeScannerStatus.error("Timeout de leitura do boleto!");
     });
-    //listenCamera();
   }
 
   Future<void> scannerBarCore(InputImage inputImage) async {
     try {
-      //if (status.cameraController != null) {
-      //  if (status.cameraController!.value.isStreamingImages)
-      //    status.cameraController!.stopImageStream();
-      // }
       final barcodes = await barcodeScanner.processImage(inputImage);
       var barcode;
       for (Barcode item in barcodes) {
@@ -61,10 +56,7 @@ class BarcodeScannerController {
         status = BarcodeScannerStatus.barcode(barcode);
         cameraController!.dispose();
         await barcodeScanner.close();
-        //} else {
-        //  getAvailableCameras();
       }
-
       return;
     } catch (e) {
       print("ERRO DA LEITURA $e");
@@ -72,7 +64,6 @@ class BarcodeScannerController {
   }
 
   void scanWithImagePicker() async {
-    //await status.cameraController!.stopImageStream();
     final response = await ImagePicker().getImage(source: ImageSource.gallery);
     final inputImage = InputImage.fromFilePath(response!.path);
     scannerBarCore(inputImage);
@@ -119,8 +110,6 @@ class BarcodeScannerController {
             final inputImageCamera = InputImage.fromBytes(
                 bytes: bytes, inputImageData: inputImageData);
             scannerBarCore(inputImageCamera);
-            //await Future.delayed(Duration(seconds: 3));
-            //await scannerBarCore(inputImageCamera);
           } catch (e) {
             print(e);
           }

@@ -77,7 +77,8 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(10)),
                 child: IconButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, "/barcode_scanner");
+                      //Navigator.pushNamed(context, "/barcode_scanner");
+                      Navigator.pushNamed(context, "/insert_boleto");
                     },
                     icon: Icon(
                       Icons.add_box_outlined,
