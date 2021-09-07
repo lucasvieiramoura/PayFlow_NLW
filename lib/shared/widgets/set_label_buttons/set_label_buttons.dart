@@ -36,6 +36,7 @@ class SetLabelButtons extends StatelessWidget {
             color: AppColors.stroke,
           ),
           Container(
+            height: 56,
             child: Row(
               children: [
                 Expanded(
