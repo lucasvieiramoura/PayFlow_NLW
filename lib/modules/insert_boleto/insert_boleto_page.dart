@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:payflow/modules/insert_boleto/inset_boleto_controller.dart';
+import 'package:payflow/modules/insert_boleto/insert_boleto_controller.dart';
 import 'package:payflow/shared/themes/app_colors.dart';
 import 'package:payflow/shared/themes/app_text_styles.dart';
 import 'package:payflow/shared/widgets/input_text/input_text_widget.dart';
@@ -12,7 +12,7 @@ class InsertBoletoPage extends StatefulWidget {
   const InsertBoletoPage({Key? key, this.barcode}) : super(key: key);
 
   @override
-  State<InsertBoletoPage> createState() => _InsertBoletoPageState();
+  _InsertBoletoPageState createState() => _InsertBoletoPageState();
 }
 
 class _InsertBoletoPageState extends State<InsertBoletoPage> {
@@ -66,14 +66,18 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
                         label: "Nome do Boleto",
                         icon: Icons.design_services_outlined,
                         validator: controller.validateName,
-                        onChanged: (value) {},
+                        onChanged: (value) {
+                          controller.onChanged(name: value);
+                        },
                       ),
                       InputTextWidget(
                         controller: dueDataInputTextController,
                         label: "Vencimento",
                         icon: FontAwesomeIcons.timesCircle,
                         validator: controller.validadteVencimento,
-                        onChanged: (value) {},
+                        onChanged: (value) {
+                          controller.onChanged(dueDate: value);
+                        },
                       ),
                       InputTextWidget(
                         controller: moneyInputTextController,
@@ -81,14 +85,19 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
                         icon: FontAwesomeIcons.wallet,
                         validator: (_) => controller.validateValor(
                             moneyInputTextController.numberValue),
-                        onChanged: (value) {},
+                        onChanged: (value) {
+                          controller.onChanged(
+                              value: moneyInputTextController.numberValue);
+                        },
                       ),
                       InputTextWidget(
                         controller: barcodeInputTextController,
                         label: "Código",
                         icon: FontAwesomeIcons.barcode,
                         validator: controller.validadeCodigo,
-                        onChanged: (value) {},
+                        onChanged: (value) {
+                          controller.onChanged(barcode: value);
+                        },
                       ),
                     ],
                   ))

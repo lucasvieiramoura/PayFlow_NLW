@@ -4,27 +4,37 @@ import 'package:payflow/shared/themes/app_text_styles.dart';
 
 class BoletoTileWidget extends StatelessWidget {
   final BoletoModel data;
-  const BoletoTileWidget({Key? key, required this.data}) : super(key: key);
+  const BoletoTileWidget({
+    Key? key,
+    required this.data,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: EdgeInsets.zero,
-      title: Text(data.name!),
-      subtitle: Text(
-        "Vence em ${data.dueDate}",
-        style: TextStyles.captionBody,
-      ),
-      trailing: Text.rich(
-        TextSpan(
-          text: "R\$",
-          style: TextStyles.trailingRegular,
-          children: [
-            TextSpan(
-              text: "${data.value?.toStringAsFixed(2)}",
-              style: TextStyles.trailingBold,
-            )
-          ],
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: ListTile(
+        contentPadding: EdgeInsets.zero,
+        title: Text(
+          data.name!,
+          //'Boleto',
+          style: TextStyles.titleListTile,
+        ),
+        subtitle: Text(
+          "Vence em ${data.dueDate}",
+          style: TextStyles.captionBody,
+        ),
+        trailing: Text.rich(
+          TextSpan(
+            text: "R\$",
+            style: TextStyles.trailingRegular,
+            children: [
+              TextSpan(
+                text: "${data.value?.toStringAsFixed(2)}",
+                style: TextStyles.trailingBold,
+              )
+            ],
+          ),
         ),
       ),
     );

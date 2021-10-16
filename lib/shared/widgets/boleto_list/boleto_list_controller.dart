@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:payflow/shared/models/boleto_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -11,13 +11,15 @@ class BoletoListController {
     getBoletos();
   }
 
-  Future<void> getBoletos() async {
+  void getBoletos() async {
     try {
       final instance = await SharedPreferences.getInstance();
-      final response = instance.getStringList("boletos") ?? <String>[];
-      boletos = response.map((e) => BoletoModel.fromJson(e)).toList();
-    } catch (e) {
-      boletos = <BoletoModel>[];
-    }
+      final response = instance.getStringList("boletos"); //?? <String>[];
+      boletos = response!.map((e) => BoletoModel.fromJson(e)).toList();
+    } catch (e) {}
+  }
+
+  void dispose() {
+    boletosNotifier.dispose();
   }
 }

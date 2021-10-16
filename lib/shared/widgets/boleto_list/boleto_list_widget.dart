@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'package:payflow/shared/models/boleto_model.dart';
 import 'package:payflow/shared/widgets/boleto_list/boleto_list_controller.dart';
 import 'package:payflow/shared/widgets/boleto_tile/boleto_tile_widget.dart';
 
 class BoletoListWidget extends StatefulWidget {
-  const BoletoListWidget({Key? key, BoletoModel? data}) : super(key: key);
+  BoletoListWidget({
+    Key? key,
+  }) : super(key: key);
 
   @override
   _BoletoListWidgetState createState() => _BoletoListWidgetState();
@@ -12,9 +15,15 @@ class BoletoListWidget extends StatefulWidget {
 
 class _BoletoListWidgetState extends State<BoletoListWidget> {
   final controller = BoletoListController();
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    Size _screeSize = MediaQuery.of(context).size;
     return ValueListenableBuilder<List<BoletoModel>>(
       valueListenable: controller.boletosNotifier,
       builder: (_, boletos, __) => Column(
