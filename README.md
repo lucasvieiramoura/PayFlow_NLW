@@ -4,12 +4,12 @@ Projeto Gerenciador de boletos
 
 ## Fotos do Aplicativo
 
-![Splash] (assets/images/Splash_Page_Gerenciador_de_boletos.png)
-![Home] (assets/images/Home_Page_Gerenciador_de_Boletos.png)
-![Camera_Barcorde] (assets/images/Barcode_Scanner_Gerenciador_de_Boletos.png)
-![Error_Barcode] (assets/images/Error_Scanner_Barcode_Gerenciador_de_Boletos.png)
-![Cadastro] (assets/images/Cadastra_Boleto_Gerenciador_de_Boletos.png)
-![Extratos] (assets/images/Extratos_Boletos_Com_Floating_Button_Delete_All.png)
+![Splash] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Splash_Page_Gerenciador_de_boletos.png?raw=true)
+![Home] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Home_Page_Gerenciador_de_Boletos.png?raw=true)
+![Camera_Barcorde] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Barcode_Scanner_Gerenciador_de_Boletos.png?raw=true)
+![Error_Barcode] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Error_Scanner_Barcode_Gerenciador_de_Boletos.png?raw=true)
+![Cadastro] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Cadastra_Boleto_Gerenciador_de_Boletos.png?raw=true)
+![Extratos] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Extratos_Boletos_Com_Floating_Button_Delete_All.png?raw=true)
 
 
 ## Getting Started
