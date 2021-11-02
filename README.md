@@ -4,12 +4,12 @@ Projeto Gerenciador de boletos
 
 ## Fotos do Aplicativo
 
-![Splash] (C:\Users\lucas.moura\OneDrive\Job\Dev\Splash_Page_Gerenciador_de_boletos.png)
-![Home] (C:\Users\lucas.moura\OneDrive\Job\Dev\Home_Page_Gerenciador_de_Boletos.png)
-![Camera_Barcorde] (C:\Users\lucas.moura\OneDrive\Job\Dev\Barcode_Scanner_Gerenciador_de_Boletos.png)
-![Error_Barcode] (C:\Users\lucas.moura\OneDrive\Job\Dev\Error_Scanner_Barcode_Gerenciador_de_Boletos.png)
-![Cadastro] (C:\Users\lucas.moura\OneDrive\Job\Dev\Cadastra_Boleto_Gerenciador_de_Boletos.png)
-![Extratos] (C:\Users\lucas.moura\OneDrive\Job\Dev\Extratos_Boletos_Com_Floating_Button_Delete_All.png)
+![Splash] (https://1drv.ms/u/s!AofbuOE4j_-MgoVMp4dar-eQCvn0ww?e=Gxdbhj)
+![Home] (https://1drv.ms/u/s!AofbuOE4j_-MgoVHAPTlD-m2ImWRzg?e=FMYHZD)
+![Camera_Barcorde] (https://1drv.ms/u/s!AofbuOE4j_-MgoVIklGEK6aBxLrFsA?e=jtucdF)
+![Error_Barcode] (https://1drv.ms/u/s!AofbuOE4j_-MgoVJ0IomqpUKzkHakg?e=hLQgyo)
+![Cadastro] (https://1drv.ms/u/s!AofbuOE4j_-MgoVKoFCvY0SAtPdi8Q?e=oYLvGx)
+![Extratos] (https://1drv.ms/u/s!AofbuOE4j_-MgoVLtxpQGOS1Yy485A?e=Euq11O)
 
 
 ## Getting Started
