@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:payflow/shared/models/boleto_model.dart';
 import 'package:payflow/shared/themes/app_colors.dart';
 import 'package:payflow/shared/themes/app_images.dart';
@@ -6,7 +7,7 @@ import 'package:payflow/shared/themes/app_text_styles.dart';
 import 'package:payflow/shared/widgets/boleto_list/boleto_list_controller.dart';
 
 class BoletoInfoWidget extends StatefulWidget {
-  BoletoInfoWidget({
+  const BoletoInfoWidget({
     Key? key,
   }) : super(key: key);
 
@@ -47,7 +48,7 @@ class _BoletoInfoWidgetState extends State<BoletoInfoWidget> {
                         style: TextStyles.captionBackground,
                         children: [
                           TextSpan(
-                            text: '${boletos.length} boletos \n',
+                            text: "${boletos.length} boletos \n",
                             style: TextStyles.captionBoldBackground,
                           ),
                           TextSpan(

@@ -13,7 +13,7 @@ class UserModel {
   factory UserModel.fromJson(String json) =>
       UserModel.fromMap(jsonDecode(json));
 
-  toMap() => {
+  Map<String, dynamic> toMap() => {
         "name": name,
         "photoURL": photoURL,
       };

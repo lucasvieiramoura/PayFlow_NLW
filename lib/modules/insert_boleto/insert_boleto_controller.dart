@@ -34,6 +34,7 @@ class InsertBoletoController {
     final boletos = instance.getStringList("boletos") ?? <String>[];
     boletos.add(model.toJson());
     await instance.setStringList("boletos", boletos);
+    print(boletos);
     return;
   }
 

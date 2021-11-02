@@ -50,6 +50,19 @@ class _ExtractPageState extends State<ExtractPage> {
               key: UniqueKey(),
             ),
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              FloatingActionButton(
+                onPressed: () {
+                  controller.deleteBoleto();
+                },
+                child: const Icon(Icons.delete),
+                backgroundColor: AppColors.primary,
+                tooltip: 'Apagar Todos boletos',
+              ),
+            ],
+          ),
         ],
       ),
     );

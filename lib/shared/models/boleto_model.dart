@@ -37,10 +37,10 @@ class BoletoModel {
 
   factory BoletoModel.fromMap(Map<String, dynamic> map) {
     return BoletoModel(
-      name: map['name'],
-      dueDate: map['dueDate'],
-      value: map['value'],
-      barcode: map['barcode'],
+      name: map['name'] != null ? map['name'] : null,
+      dueDate: map['dueDate'] != null ? map['dueDate'] : null,
+      value: map['value'] != null ? map['value'] : null,
+      barcode: map['barcode'] != null ? map['barcode'] : null,
     );
   }
 

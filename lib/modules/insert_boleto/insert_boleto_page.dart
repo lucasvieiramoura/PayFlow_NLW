@@ -22,7 +22,7 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
       MoneyMaskedTextController(leftSymbol: "R\$", decimalSeparator: ",");
 
   final dueDataInputTextController = MaskedTextController(mask: "00/00/0000");
-  final barcodeInputTextController = TextEditingController();
+  final barcodeInputTextController = TextEditingController(text: "Código");
 
   @override
   void initState() {
@@ -108,13 +108,14 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
       bottomNavigationBar: SetLabelButtons(
         enableSecondaryColor: true,
         primaryLabel: "Cancelar",
-        primaryOnPressed: () {
+        primaryOnPressed: () async {
           Navigator.pop(context);
         },
         secondaryLabel: "Cadastrar",
         secondaryOnPressed: () async {
           await controller.cadastrarBoleto();
           Navigator.pop(context);
+          setState(() {});
         },
       ),
     );

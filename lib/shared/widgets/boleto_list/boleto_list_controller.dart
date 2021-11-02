@@ -16,7 +16,19 @@ class BoletoListController {
       final instance = await SharedPreferences.getInstance();
       final response = instance.getStringList("boletos"); //?? <String>[];
       boletos = response!.map((e) => BoletoModel.fromJson(e)).toList();
-    } catch (e) {}
+      print(boletos);
+    } catch (e) {
+      boletos = <BoletoModel>[];
+    }
+  }
+
+  Future<void> deleteBoleto() async {
+    final instance = await SharedPreferences.getInstance();
+    final boletos = instance.getStringList("boletos");
+    boletos!.clear();
+    await instance.setStringList("boletos", boletos);
+    print(boletos);
+    return;
   }
 
   void dispose() {

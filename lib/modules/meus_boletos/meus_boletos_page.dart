@@ -33,11 +33,10 @@ class _MeusBoletosPageState extends State<MeusBoletosPage> {
               Padding(
                 padding: const EdgeInsets.only(top: 24, left: 24, right: 24),
                 child: AnimatedCard(
-                  direction: AnimatedCardDirection.left,
-                  child: BoletoInfoWidget(
-                    key: UniqueKey(),
-                  ),
-                ),
+                    direction: AnimatedCardDirection.top,
+                    child: ValueListenableBuilder<List<BoletoModel>>(
+                        valueListenable: controller.boletosNotifier,
+                        builder: (_, boletos, __) => BoletoInfoWidget())),
               )
             ],
           ),

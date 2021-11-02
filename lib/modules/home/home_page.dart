@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:payflow/modules/extract/extract_page.dart';
 import 'package:payflow/modules/home/home_controller.dart';
+import 'package:payflow/modules/insert_boleto/insert_boleto_controller.dart';
 import 'package:payflow/modules/meus_boletos/meus_boletos_page.dart';
 import 'package:payflow/shared/models/boleto_model.dart';
 import 'package:payflow/shared/models/user_model.dart';
@@ -21,8 +22,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final boletoController = InsertBoletoController();
   final controller = HomeController();
-  // final pages = [Container(color: Colors.red)];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,10 +61,13 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: [
-        MeusBoletosPage(),
+        MeusBoletosPage(
+          key: UniqueKey(),
+        ),
         ExtractPage(
+          key: UniqueKey(),
           user: widget.user,
-        )
+        ),
       ][controller.currentPage],
       bottomNavigationBar: Container(
         height: 90,
