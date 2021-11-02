@@ -4,12 +4,12 @@ Projeto Gerenciador de boletos
 
 ## Fotos do Aplicativo
 
-![Splash] (https://1drv.ms/u/s!AofbuOE4j_-MgoVMp4dar-eQCvn0ww?e=Gxdbhj)
-![Home] (https://1drv.ms/u/s!AofbuOE4j_-MgoVHAPTlD-m2ImWRzg?e=FMYHZD)
-![Camera_Barcorde] (https://1drv.ms/u/s!AofbuOE4j_-MgoVIklGEK6aBxLrFsA?e=jtucdF)
-![Error_Barcode] (https://1drv.ms/u/s!AofbuOE4j_-MgoVJ0IomqpUKzkHakg?e=hLQgyo)
-![Cadastro] (https://1drv.ms/u/s!AofbuOE4j_-MgoVKoFCvY0SAtPdi8Q?e=oYLvGx)
-![Extratos] (https://1drv.ms/u/s!AofbuOE4j_-MgoVLtxpQGOS1Yy485A?e=Euq11O)
+![Splash] (https://1drv.ms/u/s!AofbuOE4j_-MgoVMp4dar-eQCvn0ww?e=Gxdbhj.png)
+![Home] (https://1drv.ms/u/s!AofbuOE4j_-MgoVHAPTlD-m2ImWRzg?e=FMYHZD.png)
+![Camera_Barcorde] (https://1drv.ms/u/s!AofbuOE4j_-MgoVIklGEK6aBxLrFsA?e=jtucdF.png)
+![Error_Barcode] (https://1drv.ms/u/s!AofbuOE4j_-MgoVJ0IomqpUKzkHakg?e=hLQgyo.png)
+![Cadastro] (https://1drv.ms/u/s!AofbuOE4j_-MgoVKoFCvY0SAtPdi8Q?e=oYLvGx.png)
+![Extratos] (https://1drv.ms/u/s!AofbuOE4j_-MgoVLtxpQGOS1Yy485A?e=Euq11O.png)
 
 
 ## Getting Started
