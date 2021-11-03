@@ -1,15 +1,18 @@
 # Payflow
 
-Projeto Gerenciador de boletos
+Projeto Gerenciador de boletos, desenvolvido em conjunto com Gabu Dev em bootcamp da RocketSeat no Next Level Week Together.
 
 ## Fotos do Aplicativo
 
-![Splash] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Splash_Page_Gerenciador_de_boletos.png?raw=true)
-![Home] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Home_Page_Gerenciador_de_Boletos.png?raw=true)
-![Camera_Barcorde] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Barcode_Scanner_Gerenciador_de_Boletos.png?raw=true)
-![Error_Barcode] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Error_Scanner_Barcode_Gerenciador_de_Boletos.png?raw=true)
-![Cadastro] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Cadastra_Boleto_Gerenciador_de_Boletos.png?raw=true)
-![Extratos] (https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Extratos_Boletos_Com_Floating_Button_Delete_All.png?raw=true)
+<h2 align="center"> Layout 🎨</h2>
+<p align="center"> O Layout foi desenvolviento por <a heref="https://instagram.com/tiagoluchtenberg"> Tiago Luchtenberg</a> e você pode acessá-lo no Figma: <a href="https://www.figma.com/file/kLK7FYnWKMoN68sQXcSniu/PayFlow">Mobile</a> </p>
+
+<p align="center">Splash</p> <img src="https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Splash_Page_Gerenciador_de_boletos.png">
+<p align="center">Home</p> <img src="https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Home_Page_Gerenciador_de_Boletos.png">
+<p align="center">Barcode Scanner</p> <img src="https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Barcode_Scanner_Gerenciador_de_Boletos.png">
+<p align="center">Error Barcode </p> <img src="https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Error_Scanner_Barcode_Gerenciador_de_Boletos.png">
+<p align="center">Cadastro Boleto</p> <img src="https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Cadastra_Boleto_Gerenciador_de_Boletos.png">
+<p align="center">Extratos</p> <img src="https://github.com/lucasvieiramoura/PayFlow_NLW/tree/master/assets/images/Extratos_Boletos_Com_Floating_Button_Delete_All.png">
 
 
 ## Getting Started
