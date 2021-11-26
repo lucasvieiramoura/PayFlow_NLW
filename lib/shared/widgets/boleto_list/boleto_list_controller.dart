@@ -31,6 +31,16 @@ class BoletoListController {
     return;
   }
 
+  Future<void> deleteBoletoId() async {
+    final instance = await SharedPreferences.getInstance();
+    final boletos = instance.getKeys();
+    boletos.remove(boletosNotifier.hashCode);
+    //final boletos = instance.getStringList("boletos");
+    //await instance.setStringList("boletos", boletos);
+    print(boletos);
+    return;
+  }
+
   void dispose() {
     boletosNotifier.dispose();
   }
